@@ -3,6 +3,7 @@
 This application is develop on the Intellij IDE, where was used the following technologies:
 
 - lombok
+- httpclient
 - spring-boot-starter-data-jpa
 - h2
 - spring-boot-starter-data-rest
