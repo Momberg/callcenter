@@ -78,10 +78,6 @@
 						"value": "application/json"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "http://localhost:8080/client?cpf=43081408890",
 					"protocol": "http",
@@ -114,10 +110,6 @@
 						"value": "application/json"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "http://localhost:8080/consultcep?cep=04105002",
 					"protocol": "http",
@@ -150,10 +142,6 @@
 						"value": "application/json"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "http://localhost:8080/consultstates",
 					"protocol": "http",
@@ -180,19 +168,15 @@
 						"value": "application/json"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
-					"raw": "http://localhost:8080/consultmunicipalities?id=35",
+					"raw": "http://localhost:8080/consultcounties?id=35",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"consultmunicipalities"
+						"consultcounties"
 					],
 					"query": [
 						{
