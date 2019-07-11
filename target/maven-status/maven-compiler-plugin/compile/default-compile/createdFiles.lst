@@ -1,0 +1,11 @@
+com\callcenter\CallCenterApplication\entitys\clients\ClientEntity.class
+com\callcenter\CallCenterApplication\gateways\ClientsGateway.class
+com\callcenter\CallCenterApplication\usecases\ConsultMunicipalities.class
+com\callcenter\CallCenterApplication\usecases\ConsultCep.class
+com\callcenter\CallCenterApplication\usecases\ConsultStates$1.class
+com\callcenter\CallCenterApplication\entitys\services\CepEntity.class
+com\callcenter\CallCenterApplication\entitys\services\IbgeEntity.class
+com\callcenter\CallCenterApplication\entitys\services\RegionEntity.class
+com\callcenter\CallCenterApplication\CallCenterApplication.class
+com\callcenter\CallCenterApplication\usecases\ConsultStates.class
+com\callcenter\CallCenterApplication\controllers\ServicesController.class

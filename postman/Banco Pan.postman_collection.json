@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "e1acfdff-1e8d-4cbf-9f7b-7fa830d300cd",
+		"name": "Banco Pan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[POST] add client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Gabriel Duarte Momberg\",\n\t\"cpf\": \"43081408890\",\n\t\"street\": \"Rua Dr. Nicolau de Sousa Queiros\",\n\t\"neighborhood\": \"Vila Mariana\",\n\t\"city\": \"São Paulo\",\n\t\"cep\": \"04105002\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PATCH] update client",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Gabriel Duarte Momberg teste\",\n\t\"cpf\": \"43081408890\",\n\t\"street\": \"Rua Dr. Nicolau de Sousa Queiros\",\n\t\"neighborhood\": \"Vila Mariana\",\n\t\"city\": \"São Paulo\",\n\t\"cep\": \"04105002\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/43081408890",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"43081408890"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] get client",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/client?cpf=43081408890",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "cpf",
+							"value": "43081408890"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] get cep info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultcep?cep=04105002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultcep"
+					],
+					"query": [
+						{
+							"key": "cep",
+							"value": "04105002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] get states info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultstates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultstates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] get counties info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultmunicipalities?id=35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultmunicipalities"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
